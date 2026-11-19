@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alerta en el laboratorio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🧪 Alerta en el laboratorio</h1>
+  <div id="alarm" class="alarm">🚨 Alarma activa</div>
+  <div id="clock" aria-label="Tiempo transcurrido">⏱ 00:00</div>
+  <button id="regBtn">📋 Registro</button>
+  <button id="fsBtn">⛶ Pantalla completa</button>
+  <button id="resetBtn">↺ Reiniciar partida</button>
+</header>
+<ol id="nav" aria-label="Progreso"></ol>
+<main id="main"></main>
+<aside id="reg" hidden aria-label="Registro del equipo"></aside>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="cf" hidden>¿Reiniciar? Se perderá todo el progreso. <button id="cfy">Sí, reiniciar</button><button id="cfn">Cancelar</button></div>
+<div id="doors"><i></i><i></i></div>
+<script src="script.js"></script>
+</body>
+</html>
